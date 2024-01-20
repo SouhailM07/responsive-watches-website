@@ -23,19 +23,23 @@ export default function Navbar() {
         <Toolbar
           component="nav"
           sx={{ py: "1.6rem" }}
-          className="mx-auto max-w-[85rem] justify-between tracking-[0.4rem] text-textColor font-bold text-[1.2rem] "
+          className="mx-auto max-w-[85rem] justify-between tracking-[0.4rem] text-textColor font-bold text-[1.1rem] select-none"
         >
           <div className="text-titleColor">WATCHES</div>
           <div className="flex space-x-[4rem] items-center">
             <Stack direction="row" spacing="4rem" component="ul">
               {navLinks.map((e, i) => {
-                return <li key={i}>{e}</li>;
+                return (
+                  <li key={i} className="cursor-pointer">
+                    {e}
+                  </li>
+                );
               })}
             </Stack>
             <Stack direction="row" spacing="2rem" component="ul">
               {socialLinks.map((e, i) => {
                 return (
-                  <li key={i}>
+                  <li key={i} className="cursor-pointer">
                     <img src={e} alt="logo" className="h-[1.3rem] opacity-70" />
                   </li>
                 );

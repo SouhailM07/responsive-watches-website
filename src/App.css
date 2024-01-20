@@ -2,9 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/*=============== GOOGLE FONTS ===============*/
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap");
-
 html {
   font-size: 13.5px;
 }
@@ -12,4 +9,9 @@ html {
 body {
   font-family: "Montserrat" !important;
   @apply bg-bodyColor;
+}
+
+/* swiper-pagination-bullet swiper-pagination-bullet-active swiper-pagination-bullet-active-main */
+.swiper-pagination-bullet {
+  @apply !bg-white !w-[1rem] !rounded-md !h-[0.3rem];
 }
