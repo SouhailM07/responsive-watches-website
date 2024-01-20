@@ -10,7 +10,7 @@ import arrow_logo from "/chevron-right-solid.svg";
 export default function Home() {
   return (
     <>
-      <div className="text-white mt-[4rem] mx-auto px-[2rem] max-w-[88rem] grid grid-cols-1 md:grid-cols-3 items-center place-items-center gap-y-[2rem]">
+      <div className="text-white mt-[4rem] mx-auto md:px-[2rem] md:max-w-[88rem] grid grid-cols-1 md:grid-cols-3 items-center place-items-center gap-y-[2rem]">
         <Intro />
         <Watches />
         <Details />
@@ -22,7 +22,7 @@ export default function Home() {
 let Intro = () => {
   return (
     <>
-      <article className="flex flex-col justify-between md:text-left text-center md:items-start items-center h-[20rem] md:h-[27rem]">
+      <article className="flex flex-col  justify-between md:text-left text-center md:items-start items-center h-[20rem] md:h-[27rem]">
         {/* rating */}
         <section className="space-y-[1rem]">
           <Rating

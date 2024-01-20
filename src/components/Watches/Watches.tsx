@@ -33,11 +33,11 @@ export default function Watches() {
         }}
         pagination
         modules={[EffectCreative, Pagination]}
-        className="w-[30rem] h-full"
+        className="w-[27rem]  md:w-[30rem]  h-full"
       >
         {watches.map((e, i) => {
           return (
-            <SwiperSlide key={i} className="flex items-center justify-center">
+            <SwiperSlide key={i} className="flex items-center justify-center ">
               <img src={e} alt="" className="h-[20rem] lg:h-[32rem] " />
             </SwiperSlide>
           );
