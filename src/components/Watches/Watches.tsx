@@ -14,7 +14,7 @@ import watch_3 from "/watches-3.png";
 export default function Watches() {
   const watches: string[] = [watch_1, watch_2, watch_3];
   return (
-    <div className="h-[35rem] mr-[2rem]">
+    <div className="md:h-[35rem] h-[30rem] md:mr-[2rem]">
       <Swiper
         grabCursor={true}
         loop
@@ -37,8 +37,8 @@ export default function Watches() {
       >
         {watches.map((e, i) => {
           return (
-            <SwiperSlide key={i}>
-              <img src={e} alt="" className="h-[32rem] mx-auto" />
+            <SwiperSlide key={i} className="flex items-center justify-center">
+              <img src={e} alt="" className="h-[20rem] lg:h-[32rem] " />
             </SwiperSlide>
           );
         })}

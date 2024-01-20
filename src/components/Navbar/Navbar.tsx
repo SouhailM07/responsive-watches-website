@@ -26,7 +26,7 @@ export default function Navbar() {
           className="mx-auto max-w-[85rem] justify-between tracking-[0.4rem] text-textColor font-bold text-[1.1rem] select-none"
         >
           <div className="text-titleColor">WATCHES</div>
-          <div className="flex space-x-[4rem] items-center">
+          <div className="flex space-x-[4rem] items-center hidden md:flex">
             <Stack direction="row" spacing="4rem" component="ul">
               {navLinks.map((e, i) => {
                 return (

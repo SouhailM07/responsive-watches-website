@@ -8,6 +8,10 @@
         bodyColor: "hsl(0, 0%, 0%)",
       },
     },
+    screens: {
+      md: "900px",
+      lg: "1024px",
+    },
   },
   plugins: [],
 };
